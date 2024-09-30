@@ -1,5 +1,4 @@
 #include <stdio.h>
-#include <type_traits>
 
 // 2つの引数の小さい値を返す関数
 template<typename Type>
