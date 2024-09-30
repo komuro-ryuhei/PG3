@@ -40,20 +40,21 @@ int FindHours() {
 }
 
 int main() {
-
+	
+	// 労働時間
 	int hours = 1;
 
-	printf("労働時間 : %d時間\n\n", hours);
+	printf("労働時間 : %d時間\n\n", hours); // 労働時間を出力
 
-	printf("一般的な時給1072円の%d時間の賃金 : %d円\n", hours, Normal(hours));
-	printf("再帰的な時給の%d時間の賃金       : %d円\n", hours, TotalWage(hours));
+	printf("一般的な時給1072円の%d時間の賃金 : %d円\n", hours, Normal(hours)); // 一般的な賃金を出力
+	printf("再帰的な時給の%d時間の賃金       : %d円\n", hours, TotalWage(hours)); // 再帰的な賃金を出力
 
 	printf("----------------------------------------------------------------\n");
 
 	// 再帰的な賃金が一般的な賃金を超える時間を計算
 	int hoursToExceed = FindHours();
 	if (hoursToExceed != -1) {
-		printf("再帰的な賃金が一般的な賃金を超えるのは %d 時間です。\n", hoursToExceed);
+		printf("再帰的な賃金が一般的な賃金を超えるのは %d 時間です。\n", hoursToExceed); // 再帰的な賃金が高くなる時間を出力
 	} else {
 		printf("再帰的な賃金が一般的な賃金を超える時間は見つかりませんでした。\n");
 	}
