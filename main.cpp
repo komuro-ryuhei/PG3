@@ -18,7 +18,7 @@ void playGame(bool (*callback)(int)) {
 	std::cin >> userGuess;
 
 	// 3秒待機
-	std::this_thread::sleep_for(std::chrono::seconds(2));
+	std::this_thread::sleep_for(std::chrono::seconds(3));
 
 	// ユーザーの予測とサイコロの目を比較
 	bool isUserCorrect = (userGuess == "奇数" && callback(diceRoll)) || (userGuess == "偶数" && !callback(diceRoll));
