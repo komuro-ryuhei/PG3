@@ -7,7 +7,7 @@ int Normal(int time) {
 	return time * 1072;
 }
 
-// 再帰的な賃金計算関数
+// 再帰的な賃金計算関数(引数は働いた時間)
 int Recursion(int time) {
 
 	// 最初の1時間は100円
@@ -18,7 +18,7 @@ int Recursion(int time) {
 	return (Recursion(time - 1) * 2 - 50);
 }
 
-// 合計賃金計算関数
+// 合計賃金計算関数(引数は働いた時間)
 int TotalWage(int time) {
 	// 合計の金額
 	int total = 0;
@@ -42,7 +42,7 @@ int FindHours() {
 int main() {
 	
 	// 労働時間
-	int hours = 1;
+	int hours = 10;
 
 	printf("労働時間 : %d時間\n\n", hours); // 労働時間を出力
 
